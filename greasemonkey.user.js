@@ -14,12 +14,12 @@
 // @name strava-map-switcher
 // @description Map switcher for Strava website
 // @match https://www.strava.com/*
-// @downloadURL https://cdn.jsdelivr.net/gh/liskin/strava-map-switcher@master/greasemonkey.user.js
+// @downloadURL https://github.com/npf/strava-map-switcher/raw/master/greasemonkey.user.js
 // ==/UserScript==
 
 {
 	const s = document.createElement("script");
-	s.src = 'https://rawgit.com/liskin/strava-map-switcher/master/load.js';
+	s.src = 'https://raw.githubusercontent.com/npf/strava-map-switcher/master/load.js';
 	s.type = 'text/javascript';
 	document.body.appendChild(s);
 }
