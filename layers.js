@@ -22,7 +22,7 @@ var AdditionalMapLayers;
 	const kartverketAttr = '&copy; <a href="https://www.kartverket.no/">Kartverket</a>';
 	const geoportailAttr = '&copy; <a href="https://www.geoportail.gouv.fr/">Geoportail</a>';
 	const swisstopoAttr = '&copy; <a href="https://map.geo.admin.ch/">SwissTopo</a>';
-	const 4umapsAttr = '&copy; <a href="http://4umaps.eu/index.htm">4umaps.eu Maps</a>';
+	const topo4umapsAttr = '&copy; <a href="http://4umaps.eu/index.htm">4umaps.eu Maps</a>';
 	const mtbMapNOAttr = osmAttr + ', Tiles courtesy of <a href="https://mtbmap.no/" target="_blank">mtbmap.no</a>';
 
 	AdditionalMapLayers = {
@@ -32,9 +32,9 @@ var AdditionalMapLayers;
 		opencyclemap: {name: "OpenCycleMap",
 			url: "https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png",
 			opts: {maxZoom: 20, attribution: thunderforestAttr}},
-		4umaps: {name: "4Umaps",
+		topo4umaps: {name: "4Umaps",
 			url: "http://4umaps.eu/{$z}/{$x}/{$y}.png",
-			opts: {maxZoom: 20, attribution: 4umapsAttr}},
+			opts: {maxZoom: 20, attribution: topo4umapsAttr}},
 		transport: {name: "Transport",
 			url: "https://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png",
 			opts: {maxZoom: 20, attribution: thunderforestAttr}},
