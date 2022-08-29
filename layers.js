@@ -21,6 +21,8 @@ var AdditionalMapLayers;
 	const cuzkAttr = '&copy; <a href="https://geoportal.cuzk.cz" target="_blank">ČÚZK</a>';
 	const kartverketAttr = '&copy; <a href="https://www.kartverket.no/">Kartverket</a>';
 	const geoportailAttr = '&copy; <a href="https://www.geoportail.gouv.fr/">Geoportail</a>';
+	const swisstopoAttr = '&copy; <a href="https://map.geo.admin.ch/">SwissTopo</a>';
+	const 4umapsAttr = '&copy; <a href="http://4umaps.eu/index.htm">4umaps.eu Maps</a>';
 	const mtbMapNOAttr = osmAttr + ', Tiles courtesy of <a href="https://mtbmap.no/" target="_blank">mtbmap.no</a>';
 
 	AdditionalMapLayers = {
@@ -30,6 +32,9 @@ var AdditionalMapLayers;
 		opencyclemap: {name: "OpenCycleMap",
 			url: "https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png",
 			opts: {maxZoom: 20, attribution: thunderforestAttr}},
+		4umaps: {name: "4Umaps",
+			url: "http://4umaps.eu/{$z}/{$x}/{$y}.png",
+			opts: {maxZoom: 20, attribution: 4umapsAttr}},
 		transport: {name: "Transport",
 			url: "https://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png",
 			opts: {maxZoom: 20, attribution: thunderforestAttr}},
@@ -72,5 +77,14 @@ var AdditionalMapLayers;
 		ignmaps: {name: "Geoportail Maps [FR]",
 			url: "https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.MAPS&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fjpeg&TileMatrix={z}&TileCol={x}&TileRow={y}",
 			opts: {maxZoom: 20, maxNativeZoom: 16, attribution: geoportailAttr}},
+		swisstopomaps: {name: "SwissTopo Maps [CH]",
+			url: "https://wmts100.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg",
+			opts: {maxZoom: 20, maxNativeZoom: 16, attribution: swisstopoAttr}},
+		swisstopo25: {name: "SwissTopo 1/25000 [CH]",
+			url: "https://wmts100.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe.pk25.noscale/default/current/3857/{z}/{x}/{y}.jpeg",
+			opts: {maxZoom: 20, maxNativeZoom: 16, attribution: swisstopoAttr}},
+		swisstopo10: {name: "SwissTopo 1/10000 [CH]",
+			url: "https://wmts100.geo.admin.ch/1.0.0/ch.swisstopo.landeskarte-farbe-10/default/current/3857/{z}/{x}/{y}.jpeg",
+			opts: {maxZoom: 20, maxNativeZoom: 16, attribution: swisstopoAttr}},
 	};
 }
