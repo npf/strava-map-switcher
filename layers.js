@@ -33,7 +33,7 @@ var AdditionalMapLayers;
 			url: "https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png",
 			opts: {maxZoom: 20, attribution: thunderforestAttr}},
 		topo4umaps: {name: "4Umaps",
-			url: "http://4umaps.eu/{$z}/{$x}/{$y}.png",
+			url: "http://4umaps.eu/{z}/{x}/{y}.png",
 			opts: {maxZoom: 20, attribution: topo4umapsAttr}},
 		transport: {name: "Transport",
 			url: "https://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png",
